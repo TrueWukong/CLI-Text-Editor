@@ -4,11 +4,11 @@
 #include <stack>      // Allows stack data structure
 #include <string>     // Allows string usage
 
-using namespace std;  // So we don't have to write std:: every time
+using namespace std;  // So I don't have to write std:: every time
 
 // Structure that represents a single editing action
 struct Action {
-    string type;        // Type of action: "insert", "delete", "replace"
+    string type;        // Types of action I want to implement: "insert", "delete", "replace"
     int lineNumber;     // Line where action occurred (0-based index)
     string oldText;     // Stores old text (used for undo)
     string newText;     // Stores new text (used for redo)
